@@ -2,7 +2,7 @@ class Patient
   
   @@all = []
   
-  attr_accessor :name, :doctor, :appointment
+  attr_accessor :name, :appointment, :doctor
   
   def initialize(name)
     @name = name
@@ -23,13 +23,5 @@ class Patient
   
   def doctors
     appointments.collect {|app| app.doctor}
-    
   end
-  
-  
-  
-  
-  
-  
-  
 end
